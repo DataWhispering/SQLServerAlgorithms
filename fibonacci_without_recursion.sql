@@ -2,8 +2,8 @@ drop procedure if exists dbo.fibonacci_without_recursion
 GO
 create procedure dbo.fibonacci_without_recursion
 AS
--- Fibonacci is best gotten from a lookup table.  But if you want to calculate
--- the sequence yourself, here is a method that is much simpler than the typical recursion method
+-- Fibonacci numbers are best gotten from a lookup table.  But if you want to calculate
+-- the sequence yourself, here is a method that is much simpler than using recursion.
 drop table if exists #f
 
 create table #f
